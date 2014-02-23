@@ -1,0 +1,31 @@
+{
+  "name": "structures",
+  "version": "1.0.0",
+  "description": "A node.js based data structures library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suparngp/structures.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "data-structures",
+    "queues",
+    "list",
+    "arraylist",
+    "stack"
+  ],
+  "author": "Suparn Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suparngp/structures/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "expect.js": "~0.3.1"
+  }
+}

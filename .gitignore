@@ -13,3 +13,18 @@ results
 
 npm-debug.log
 node_modules
+
+.idea
+
+.idea/*
+
+.idea/.name
+
+*.xml
+
+*.iml
+
+*.xml
+
+.idea/jsLibraryMappings.xml
+
