@@ -1,6 +1,6 @@
 /**
  * Created by suparngupta on 2/23/14.
- * Generic Interface for a list.
+ * Array list.
  */
 
 'use strict';
@@ -20,6 +20,14 @@ prototype.init = function(options){
     this.currentPos = -1;
     this.storage = [];
     this.maxSize = !options.maxSize ? null: options.maxSize;
+};
+
+prototype.get = function(index){
+
+    if(index < 0 || index > this.length){
+        throw new RangeError("Index out of bound");
+    }
+    return this.storage[index];
 };
 
 prototype.add = function(obj){

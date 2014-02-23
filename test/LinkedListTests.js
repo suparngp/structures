@@ -43,6 +43,13 @@ describe("Tests for LinkedList", function(){
                 expect(err instanceof RangeError).to.be.ok();
             }
         });
+
+        it("Should add an item", function(){
+            var list = new LinkedList({type: String, maxSize: 2});
+            list.add("Hello");
+            list.add("World");
+            expect(list.size()).to.be(2);
+        });
     });
 
     describe("Remove method", function(){

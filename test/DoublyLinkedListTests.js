@@ -1,16 +1,15 @@
 /**
  * Created by suparngupta on 2/23/14.
- * Tests for arrayLists
  */
 
-var ArrayList = require("../lists/ArrayList");
+var DoublyLinkedList = require("../lists/DoublyLinkedList");
 var expect = require("expect.js");
-describe("Tests for ArrayList", function(){
+describe("Tests for DoublyLinkedList", function(){
 
     describe("Option test for ", function(){
         it("type should throw error", function(){
             try{
-                var list = new ArrayList();
+                var list = new DoublyLinkedList();
             }
             catch(err){
                 expect(!err).not.to.be.ok();
@@ -21,7 +20,7 @@ describe("Tests for ArrayList", function(){
 
     describe("Add test", function(){
         it("Should not add a different type item", function(){
-            var list = new ArrayList({type: String});
+            var list = new DoublyLinkedList({type: String});
             try{
                 list.add(2);
             }
@@ -32,7 +31,7 @@ describe("Tests for ArrayList", function(){
         });
 
         it("Should throw range exceeded error", function(){
-            var list = new ArrayList({type: String, maxSize: 2});
+            var list = new DoublyLinkedList({type: String, maxSize: 2});
             list.add("Hello");
             list.add("World");
             try{
@@ -46,7 +45,7 @@ describe("Tests for ArrayList", function(){
         });
 
         it("Should add an item", function(){
-            var list = new ArrayList({type: String, maxSize: 2});
+            var list = new DoublyLinkedList({type: String, maxSize: 2});
             list.add("Hello");
             list.add("World");
             expect(list.size()).to.be(2);
@@ -55,12 +54,10 @@ describe("Tests for ArrayList", function(){
 
     describe("Remove method", function(){
         it("should remove an item", function(){
-            var list = new ArrayList({type: String, maxSize: 2});
+            var list = new DoublyLinkedList({type: String, maxSize: 2});
             list.add("Hello");
             list.add("World");
-
             list.remove(1);
-
             expect(list.size()).to.be(1);
         });
     });
