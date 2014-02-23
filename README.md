@@ -5,6 +5,18 @@ A node based basic data structures library with type safety. Following data stru
 
 1. [Array List](#arraylist "Array List")
 2. [Linked List](#linkedlist "Linked List")
+3. [Doubly Linked List](#doublylist "Doubly Linked List")
+
+## How to use
+
+For example to create a LinkedList, use the following snippet:
+
+<pre><code>
+
+var structures = require("all-structures");
+var list = new structures.LinkedList({type: String, maxSize: 4});
+
+</code></pre>
 
 <a name="arraylist"></a>
 ## ArrayList
@@ -81,6 +93,8 @@ While creating a linked list, following options are supported:
 6. next() - gets the next node. Returns undefined if reached to end.
 
     list.next();
+
+<a name="doublylist"></a>
 
 ## DoublyLinkedList
 
