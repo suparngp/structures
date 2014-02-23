@@ -1,5 +1,5 @@
 {
-  "name": "structures",
+  "name": "all-structures",
   "version": "1.0.0",
   "description": "A node.js based data structures library.",
   "main": "index.js",
